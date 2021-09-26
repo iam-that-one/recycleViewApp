@@ -4,19 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/w"
+    android:alpha="0.70"
+    >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="432dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:layout_editor_absoluteX="-16dp" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
 
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,10 +43,14 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
+           android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#8BC34A"
+
             android:text="Add" />
     </LinearLayout>
 
